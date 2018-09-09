@@ -23,6 +23,11 @@ img{
     margin: 0 auto;
 }
 
+#container_title{
+    width: 95%;
+    margin: 0 auto;
+}
+
 .title{
     font-size: 2.5rem;
     font-family:'Raleway', sans-serif;
@@ -313,55 +318,12 @@ footer{
 }
 
 .contact{
-    height: 100vh;
-    display: flex;
-    margin: 2em;
-    padding: 1em;
-}
-
-#niaz{
-    padding: 1em;
-}  
-
-#niaz img{
-    border-radius: 3em;
-    padding: 1em;
-}
-
-#niaz p{
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    font-family:'Raleway', sans-serif;;
-}
-
-#nur{
-    padding: 2em;
-}  
-
-#nur img{
-    border-radius: 3em;
-    padding: 1em;
-}
-
-#nur p{
-    font-size: 2rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: black;
-    font-family:'Raleway', sans-serif;;
-}
-
-.contact_info{
-    padding: 2em;
-    text-align: center;
-    
+    margin: 1em;
+    align-content: center;
 }
 
 .dhaka_add{
     text-align: center;
-    padding: 1em;
 }
 
 .dhaka_add p{
@@ -376,6 +338,16 @@ footer{
     font-family:'Raleway', sans-serif;
 }
 
+.toronto_add{
+    text-align: center;
+}
+
+.toronto_add p{
+    display: inline-block;
+    margin: 1em;
+    padding: 1em;
+}
+
 .toronto_add p span{
     display: block;
     font-size: 1rem;
@@ -385,6 +357,7 @@ footer{
 
 .email{
     margin: 1em;
+    text-align: center;
 }
 
 .email input{
@@ -395,6 +368,27 @@ footer{
 .email textarea{
     margin: 1em;
     margin-left: 0em;
+}
+
+.team{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em;
+}
+
+.team div{
+    margin: 1em;
+    text-align: center;
+    background: #025E9A;
+    border-radius: 2em;
+}
+
+.team img{
+    border-radius: 50%;
+    
 }
 
 .home_about_title{
@@ -428,7 +422,7 @@ footer{
 .policy p{
     font-size: 1rem;
     color: #000;
-    font-weight: 500;
+    font-weight: 700;
     padding: 1em;
     font-family:'Raleway', sans-serif;
 }
@@ -462,6 +456,74 @@ footer{
     padding: 1.5em;
     background: #84AFCB;
 }
+
+#meet_team{
+    padding: 1em;
+    background-image: url(../image/team_2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#team1{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+figure{
+    margin: 1em;
+    padding: 1em;
+}
+
+figure h4{
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+.img_team{
+    position: relative;
+    display: inline-block;
+}
+
+.img_team img{
+    display: block;
+}
+
+#contact_msg{
+    color: white;
+    font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family:'Raleway', sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #008cba;
+}
+
+.img_team:hover .overlay{
+    opacity: 1;
+}
+
+.overlayLeft{
+    height: 100%;
+    width:0;
+    top:0;
+    left:0;
+    background-color: rgba(20,20,20,.7);
+}
+
+.img_team:hover .overlayLeft{
+    width: 100%;
+}
+
+
 
 @media(min-width: 765px){
     
@@ -627,63 +689,26 @@ footer{
         color: #000;
         font-family:'Raleway', sans-serif;
     }
+    
+    #meet_team{
+        padding: 3em;
+    }
+    
+    figure{
+        margin: 2em;
+    }
+    
+    #contact_msg{
+        font-size: 1.5rem;
+    }
 }
 
 @media(min-width: 1050px){
-    .contact_info{
-        padding: 2em;
-        display: flex;
-        text-align: center;
-    }
     
-
-    .pic_name{
-        flex-shrink: 2;
-        padding: 1em;
-        float: left;
-    }
-
-    .pic_name img{
-        width: 70%;
-    }
-
-    #mail_address{
-        flex-shrink: 1;
-    }
-    .dhaka_add{
-        display: flex;
-        margin: 1em;
-        margin-left: 0em;
-    }
-
-    .dhaka_add p{
-        display: inline-block;
+    .contact{
+        margin: 2em;
+        padding: 2em;
         align-content: center;
-        padding: 2em;
-    }
-
-    .dhaka_add p span{
-        display: block;
-        font-size: 1rem;
-        width: 300px;
-        color: black;
-        text-align: center;
-        font-family:'Raleway', sans-serif;
-    }
-    
-    .email{
-        margin: 1em;
-        margin-left: 0em;
-    }
-
-    .email input{
-        margin: 1em;
-        margin-left: 0em;
-    }
-
-    .email textarea{
-        margin: 1em;
-        margin-left: 0em;
     }
     
     .policy{
@@ -733,6 +758,7 @@ footer{
     }
 
     .term_text p{
+        font-size: 1.1rem;
         flex-shrink: 1;
         text-align: left;
         padding: 1.5em;
