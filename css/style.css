@@ -23,11 +23,6 @@ img{
     margin: 0 auto;
 }
 
-#container_title{
-    width: 95%;
-    margin: 0 auto;
-}
-
 .title{
     font-size: 2.5rem;
     font-family:'Raleway', sans-serif;
@@ -45,6 +40,23 @@ img{
     font-family:'Raleway', sans-serif;
 }
 
+.title_2{
+    font-size: 2.5rem;
+    font-family:'Raleway', sans-serif;
+    color: #000;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.title_2 span{
+    font-weight: 300;
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+}
+
 @media(min-width: 700px){
     .title{
         font-size: 4rem;
@@ -53,6 +65,15 @@ img{
     .title span{
         font-size: 2.5rem;
     }
+    
+    .title_2{
+        font-size: 4rem;
+    }
+
+    .title_2 span{
+        font-size: 2.5rem;
+    }
+    
     .home_title{
         height: 100vh;
     }
@@ -166,7 +187,7 @@ footer{
 
 .about_title{
     color: black;
-    font-weight: 600;
+    font-weight: 1000;
     position: absolute;
     top: 0.3em;
     font-size: 1.75rem;
@@ -176,24 +197,26 @@ footer{
 .about_para{
     padding: 2em;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
+    text-align: justify;
+    text-justify: inter-word;
     font-family:'Raleway', sans-serif;
     color: #000;
 }
 
 .manage_title{
     padding-top: 4em;
-    background-image: url(../image/back2.jpg);
-    opacity: 0.7;
+    background-image: url(../image/back_3.jpg);
     background-size: cover;
-    background-position: left;
+    background-position: right;
     text-align: center;
 }
 
 .manage_title h1{
-    color: azure;
+    color: black;
     font-size: 2rem;
     padding: 2em;
+    font-weight: 1000;
     font-family:'Raleway', sans-serif;
 }
 
@@ -206,12 +229,14 @@ footer{
 .manage_tasks p{
     font-size: 1em;
     display: list-item;
+    text-align: justify;
+    text-justify: inter-word;
     font-family:'Raleway', sans-serif;
 }
 
 .service_des{
     padding: 1em;
-    background-image: url(../image/service_2.jpg);
+    background-image: url(../image/team_1.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -223,9 +248,11 @@ footer{
 }
 
 .service_text p{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1rem;
     color: #000;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .duties_tasks{
@@ -317,9 +344,34 @@ footer{
     -webkit-text-stroke: 1px azure;
 }
 
-.contact{
+#dhaka_contact{
+    display: -webkit-flex; /* Safari */
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 1em;
-    align-content: center;
+    text-align: center;
+}
+
+#pic{
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+}
+
+.contact{
+    flex: 2;
+    margin: 1em;
+}
+
+#pic img{
+    width: 350px;
+}
+
+#pic p{
+    font-size: 1.5em;
 }
 
 .dhaka_add{
@@ -404,10 +456,10 @@ footer{
 }
 
 .policy{
-    background-image: url(../image/policy.jpg);
-    background-size: cover;
-    background-position: top;
     padding: 1em;
+    background-image: url(../image/team_1.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .policy h1{
@@ -424,6 +476,8 @@ footer{
     color: #000;
     font-weight: 700;
     padding: 1em;
+    text-align: justify;
+    text-justify: inter-word;
     font-family:'Raleway', sans-serif;
 }
 
@@ -459,7 +513,7 @@ footer{
 
 #meet_team{
     padding: 1em;
-    background-image: url(../image/team_2.jpg);
+    background-image: url(../image/team_1.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -488,6 +542,7 @@ figure h4{
 
 .img_team img{
     display: block;
+    height: 500px;
 }
 
 #contact_msg{
@@ -524,26 +579,14 @@ figure h4{
 }
 
 
-
 @media(min-width: 765px){
     
     section{
         padding: 3em;
     }
-
-    .logo{
-        float: left;
-        margin-left: 3.5em;
-    }
-    nav{
-        float: right;
-        margin-right: 1em;
-        margin-top: 2em;
-    }
     
     .about_title{
         color: black;
-        font-weight: 1000;
         position: absolute;
         margin-left: 5%;
         top: 0.3em;
@@ -555,43 +598,8 @@ figure h4{
     .about_para{
         padding: 2em;
         font-size: 1.2rem;
-        font-weight: 500;
         font-family:'Raleway', sans-serif;
         color: #000;
-    }
-
-    .manage{
-        display: flex;
-        margin-top: 1em;
-    }
-
-    .manage_title{
-        padding: 1em;
-        flex-shrink: 2;
-        background-size: cover;
-        background-position: right;
-        text-align: center;
-    }
-
-    .manage_title h1{
-        color: azure;
-        font-size: 3rem;
-        margin-top: 2em;
-        padding: 1em;
-        font-weight: 500;
-        font-family:'Raleway', sans-serif;
-    }
-
-    .manage_tasks{
-        padding: 3em;
-        background: #FFFFFF;
-
-    }
-
-    .manage_tasks p{
-        font-size: 1.2em;
-        display: list-item;
-        font-family:'Raleway', sans-serif;
     }
     
     .service_des{
@@ -605,7 +613,7 @@ figure h4{
     }
 
     .service_text p{
-        font-weight: 700;
+        font-weight: 600;
         font-size: 1.5rem;
         color: #000;
     }
@@ -668,7 +676,7 @@ figure h4{
     }
     
     .cities a{
-        font-size: 6em;
+        font-size: 5rem;
     }
     
     .home_about_title{
@@ -694,16 +702,64 @@ figure h4{
         padding: 3em;
     }
     
+    #meet_team h1{
+        font-weight: 1000;
+        font-size: 3rem;
+    }
+    
     figure{
-        margin: 2em;
+        margin: 3em;
+        padding: 2em;
     }
     
     #contact_msg{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 }
 
 @media(min-width: 1050px){
+    
+    .logo{
+        float: left;
+        margin-left: 3.5em;
+    }
+    
+    nav{
+        float: right;
+        margin-right: 1em;
+        margin-top: 2em;
+    }
+    
+    .manage{
+        display: flex;
+        margin-top: 1em;
+    }
+
+    .manage_title{
+        padding: 1em;
+        flex-shrink: 2;
+        text-align: center;
+    }
+
+    .manage_title h1{
+        font-size: 3rem;
+        margin-top: 2em;
+        padding: 1em;
+        font-weight: 1000;
+        font-family:'Raleway', sans-serif;
+    }
+
+    .manage_tasks{
+        padding: 3em;
+        background: #FFFFFF;
+
+    }
+
+    .manage_tasks p{
+        font-size: 1.2em;
+        display: list-item;
+        font-family:'Raleway', sans-serif;
+    }
     
     .contact{
         margin: 2em;
@@ -711,10 +767,11 @@ figure h4{
         align-content: center;
     }
     
+    .cities a{
+        font-size: 6rem;
+    }
+    
     .policy{
-        background-image: url(../image/policy.jpg);
-        background-size: cover;
-        background-position: top;
         padding: 5em;
     }
 

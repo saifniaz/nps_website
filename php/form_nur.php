@@ -6,8 +6,9 @@ if(isset($_POST['submit'])){
     
     $mailTo = "nur.mohammed@century21.ca";
     $headers = "From: ".$email;
-    $txt = "Email from ".$name.".\n\n".$message;
+    $txt = "Email from ".$name."\r\n \r\n".$message;
     
     mail($mailTo, null, $txt, $headers);
-    header("Location:contact.html?mailsend");
+    header("Location: ..\sent.html");
 }
+?>
